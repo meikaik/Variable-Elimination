@@ -5,8 +5,8 @@ import json
 
 def restrict(factor, variable, value):
     """
-	Restricts a variable to some value in a given factor
-	"""
+    Restricts a variable to some value in a given factor
+    """
     factor = factor.copy()
     return factor[factor[variable] == value].drop(columns=variable)
 
@@ -113,7 +113,9 @@ def normalize_print(factor, silent=True):
     return factor
 
 
-def inference(factor_list, query_variables, evidence_list=[], hidden_vars=None, silent=True):
+def inference(
+    factor_list, query_variables, evidence_list=[], hidden_vars=None, silent=True
+):
     if hidden_vars is None:
         hidden_vars = list(set(variables()) - set(query_variables) - set(evidence_list))
 
