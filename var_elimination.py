@@ -185,8 +185,8 @@ def main():
         # Pr(FS | FM & FH & FB)
         inference(factor_list(), ["FS"], ["FM", "FH", "FB"], silent=False)
     elif q == "d":
-        # Pr(FS | FH & FM & FB & NA)
-        inference(factor_list(), ["FS"], ["FH", "FM", "FB", "NA"], silent=False)
+        # Pr(FS | FM & FH & FB & NA)
+        inference(factor_list(), ["FS"], ["FM", "FH", "FB", "NA"], silent=False)
     else:
         print("Usage: python3 var_elimination.py <a|b|c|d>")
 
