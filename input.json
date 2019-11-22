@@ -1,5 +1,12 @@
 {
-  "variables": ["FB", "FH", "FS", "FM", "NDG", "NA"],
+  "variables": [
+    "FB",
+    "FH",
+    "FS",
+    "FM",
+    "NDG",
+    "NA"
+  ],
   "prFH": {
     "FH": [
       true,
